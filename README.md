@@ -1,0 +1,1 @@
+minchin.pelican.plugins.nojekyll
