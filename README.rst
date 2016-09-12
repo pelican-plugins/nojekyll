@@ -1,6 +1,6 @@
-=====
+========
 NoJekyll
-=====
+========
 
 ``NoJekyll`` is a plugin for `Pelican <http://docs.getpelican.com/>`_,
 a static site generator written in Python.
