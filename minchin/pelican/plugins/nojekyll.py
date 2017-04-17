@@ -7,9 +7,10 @@ This plugin for Pelican add a *.nojekyll* file to the output root.
 """
 
 import os
+
 from pelican import signals
 
-__version__ = "1.0.1"
+__version__ = "1.0.2"
 
 
 def add_nojekyll(p):
