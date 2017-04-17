@@ -28,11 +28,12 @@ setup(
     namespace_packages=['minchin',
                         'minchin.pelican',
                         'minchin.pelican.plugins',
-                        ],
+                       ],
     include_package_data=True,
     install_requires=[
         'pelican',
         ],
+    # dev requirements include minchin.releaser >= 0.4.2
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Environment :: Console',

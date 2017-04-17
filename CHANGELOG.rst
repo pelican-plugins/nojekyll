@@ -3,6 +3,7 @@ NoJekyll Changelog
 
 This Changelog is for ``minchin.pelican.plugins.nojekyll``.
 
+- :bug:`-` update release machinery
 - :release:`1.0.1 <2016-09-12>`
 - :bug:`-` fix PEP8 formatting issues
 - :support:`-` add release machinery
