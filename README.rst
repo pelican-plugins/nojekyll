@@ -2,36 +2,51 @@
 NoJekyll
 ========
 
+|build| |pypi|
+
+.. |build| image:: https://img.shields.io/github/workflow/status/pelican-plugins/minchin.pelican.plugins.nojekyll/build
+    :target: https://github.com/pelican-plugins/minchin.pelican.plugins.nojekyll/actions
+    :alt: Build Status
+
+.. |pypi| image:: https://img.shields.io/pypi/v/pelican-nojekyll.svg
+    :target: https://pypi.python.org/pypi/pelican-nojekyll
+    :alt: PyPI Version
+
 ``NoJekyll`` is a plugin for `Pelican <http://docs.getpelican.com/>`_,
 a static site generator written in Python.
 
 ``NoJekyll`` creates a *.nojekyll* file in the root of your output directory.
 This is useful when you are publishing your site to
 `GitHub Pages <https://pages.github.com/>`_ as it keeps your site from being
-run through GitHub's defualt Jekyll site generator. This has a side effect
+run through GitHub's default Jekyll site generator. This has a side effect
 of make your updated site go live faster.
 
 
 Installation
 ============
 
-The easiest way to install ``NoJekyll`` is through the use of pip. This
-will also install the required dependencies automatically.
+The easiest way to install ``NoJekyll`` is through the use of pip. This will
+also install the required dependencies (currently just ``pelican``)
+automatically.
 
 .. code-block:: sh
 
-  pip install minchin.pelican.plugins.nojekyll
+  pip install pelican-nojekyll
 
-Then, in your ``pelicanconf.py`` file, add ``NoJekyll`` to your list of
-plugins:
+As ``NoJekyll`` is a namespace plugin, assuming you are using Pelican 4.5
+(or newer) **and** *only* other namespace plugins, ``NoJekyll`` will be
+automatically be loaded by Pelican. And that's it!
+
+If you are using an older version of Pelican, or non-namespace plugins, you may
+need to add ``NoJekyll`` to your ``pelicanconf.py``:
 
 .. code-block:: python
 
   PLUGINS = [
-              # ...
-              'minchin.pelican.plugins.nojekyll',
-              # ...
-            ]
+      # ...
+      "pelican.plugins.nojekyll",
+      # ...
+  ]
 
 And that's it! No further configuration is needed.
 

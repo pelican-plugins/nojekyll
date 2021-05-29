@@ -11,9 +11,10 @@ TIMEZONE = 'America/Edmonton'
 
 DEFAULT_LANG = 'English'
 
-PLUGINS = [
-    "minchin.pelican.plugins.nojekyll",
-]
+# rely on Namespace plugin detection; requires Pelican >= 4.5
+# PLUGINS = [
+#     "minchin.pelican.plugins.nojekyll",
+# ]
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
