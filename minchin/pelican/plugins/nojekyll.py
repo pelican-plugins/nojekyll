@@ -6,11 +6,14 @@ NoJekyll
 This plugin for Pelican add a *.nojekyll* file to the output root.
 """
 
+import logging
 import os
 
 from pelican import signals
 
 __version__ = "1.0.3-dev"
+
+logger = logging.getLogger(__name__)
 
 
 def add_nojekyll(p):
@@ -19,10 +22,11 @@ def add_nojekyll(p):
     :return: None
     """
 
-    nojekyll_path = os.path.join(p.output_path, '.nojekyll')
-    content = ' '
-    with open(nojekyll_path, 'w') as f:
+    nojekyll_path = os.path.join(p.output_path, ".nojekyll")
+    content = " "
+    with open(nojekyll_path, "w") as f:
         f.write(content)
+    logger.info("[noJekyll] written to %s" % nojekyll_path)
 
 
 def register():
