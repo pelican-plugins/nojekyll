@@ -4,8 +4,8 @@ NoJekyll
 
 |build| |pypi|
 
-.. |build| image:: https://img.shields.io/github/workflow/status/pelican-plugins/minchin.pelican.plugins.nojekyll/build
-    :target: https://github.com/pelican-plugins/minchin.pelican.plugins.nojekyll/actions
+.. |build| image:: https://img.shields.io/github/workflow/status/pelican-plugins/nojekyll/build
+    :target: https://github.com/pelican-plugins/nojekyll/actions
     :alt: Build Status
 
 .. |pypi| image:: https://img.shields.io/pypi/v/pelican-nojekyll.svg

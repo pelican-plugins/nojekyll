@@ -22,8 +22,8 @@ build-backend = "poetry.core.masonry.api"
 
 readme = "README.rst"
 keywords = ["GitHub pages", "pelican", "plugin"]
-repository = "https://github.com/pelican-plugins/minchin.pelican.plugins.nojekyll"
-documentation = "https://github.com/pelican-plugins/minchin.pelican.plugins.nojekyll/master/README.rst"
+repository = "https://github.com/pelican-plugins/nojekyll"
+documentation = "https://github.com/pelican-plugins/nojekyll/master/README.rst"
 packages = [
     { include = "pelican" },
 ]
@@ -54,8 +54,8 @@ classifiers = [
 
 [tool.poetry.urls]
 "Funding" = "https://donate.getpelican.com/"
-"Bug Tracker" = "https://github.com/pelican-plugins/minchin.pelican.plugins.nojekyll/issues"
-"Changelog" = "https://github.com/pelican-plugins/minchin.pelican.plugins.nojekyll/master/CHANGELOG.rst"
+"Bug Tracker" = "https://github.com/pelican-plugins/nojekyll/issues"
+"Changelog" = "https://github.com/pelican-plugins/nojekyll/master/CHANGELOG.rst"
 
 
 [tool.autopub]

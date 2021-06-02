@@ -10,17 +10,17 @@ NoJekyll Changelog
 - **support** minimum version of Pelican is now 3.0
 - **support** Move plugin to the `Pelican Plugins`_ organization on GitHub. The
   code for the project is now at
-  `pelican-plugins/minchin.pelican.plugins.nojekyll`_
+  `pelican-plugins/nojekyll`_
 - **support** first release to PyPI under `pelican-nojekyll`_
 - see `Pull Request #3`_.
 
 .. _pelican-nojekyll: https://pypi.org/project/pelican-nojekyll/
 .. _Pelican Plugins: https://github.com/pelican-plugins/
-.. _pelican-plugins/minchin.pelican.plugins.nojekyll: https://github.com/pelican-plugins/minchin.pelican.plugins.nojekyll/
-.. _Pull Request #8: https://github.com/pelican-plugins/minchin.pelican.plugins.nojekyll/pull/3
+.. _pelican-plugins/nojekyll: https://github.com/pelican-plugins/nojekyll/
+.. _Pull Request #3: https://github.com/pelican-plugins/nojekyll/pull/3
 
-1.1.0
------
+1.1.0 - 2021-06-01
+------------------
 
 - **feature** add logging
 
