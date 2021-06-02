@@ -3,6 +3,8 @@ NoJekyll Changelog
 
 This Changelog is for ``minchin.pelican.plugins.nojekyll``.
 
+- :release:`1.1.0 <2021-06-01>`
+- :feature:`-` add logging
 - :release:`1.0.2 <2017-04-17>`
 - :bug:`-` add Pelican trove classifier
 - :bug:`-` update release machinery
