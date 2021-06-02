@@ -49,7 +49,7 @@ def isort(c, check=False, diff=False):
         check_flag = "-c"
     if diff:
         diff_flag = "--diff"
-    c.run(f"{CMD_PREFIX}isort {check_flag} {diff_flag} .  tasks.py test-site")
+    c.run(f"{CMD_PREFIX}isort {check_flag} {diff_flag} {PKG_PATH} tasks.py test-site")
 
 
 @task
@@ -100,5 +100,5 @@ def setup(c):
             curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
 
             Once you have taken one of the above two steps, run `invoke setup` again.
-            """  #noqa: E501
+            """  # noqa: E501
         )
