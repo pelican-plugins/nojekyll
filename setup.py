@@ -20,7 +20,10 @@ def get_version(filename="minchin/pelican/plugins/nojekyll.py"):
 setup(
     name="minchin.pelican.plugins.nojekyll",
     version=get_version(),
-    description="Pelican plugin that adds a ``.nojekyll`` file to the output root. Useful for publishing to Github Pages. Written in Python.",
+    description=(
+        "Pelican plugin that adds a `.nojekyll` file to the output root. "
+        "Useful for publishing to Github Pages. Written in Python."
+    ),
     long_description="\n\n".join([open(os.path.join(base_dir, "README.rst")).read()]),
     long_description_content_type="text/x-rst",
     author="W. Minchin",
