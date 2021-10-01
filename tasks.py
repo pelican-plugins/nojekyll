@@ -1,1 +1,1 @@
-from minchin.releaser import make_release    # noqa: F401
+from minchin.releaser import make_release  # noqa: F401
