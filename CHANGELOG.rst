@@ -1,10 +1,11 @@
 NoJekyll Changelog
 
-Unreleased
-----------
+1.1.1 - 2021-10-01
+------------------
 
 - **support** Move plugin to the `Pelican Plugins`_ organization on GitHub. The
   code for the project is now at `pelican-plugins/nojekyll`_
+- **bug** fix warnings in test site generation
 
 .. _Pelican Plugins: https://github.com/pelican-plugins/
 .. _pelican-plugins/nojekyll: https://github.com/pelican-plugins/nojekyll/
