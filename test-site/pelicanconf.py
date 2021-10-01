@@ -1,15 +1,15 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 
-AUTHOR = 'MinchinWeb'
-SITENAME = 'NoJekyll Test'
-SITEURL = ''
+AUTHOR = "MinchinWeb"
+SITENAME = "NoJekyll Test"
+SITEURL = ""
 
-PATH = 'content'
+PATH = "content"
 
-TIMEZONE = 'America/Edmonton'
+TIMEZONE = "America/Edmonton"
 
-DEFAULT_LANG = 'English'
+DEFAULT_LANG = "en"
 
 PLUGINS = [
     "minchin.pelican.plugins.nojekyll",
@@ -23,16 +23,19 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'https://getpelican.com/'),
-         ('Python.org', 'https://www.python.org/'),
-         ('Jinja2', 'https://palletsprojects.com/p/jinja/'),
-         ('You can modify those links in your config file', '#'),)
+LINKS = (
+    ("NoJekyll on Github", "https://github.com/pelican-plugins/nojekyll"),
+    ("Pelican", "https://getpelican.com/"),
+    # ('Python.org', 'https://www.python.org/'),
+    # ('Jinja2', 'https://palletsprojects.com/p/jinja/'),
+    # ('You can modify those links in your config file', '#'),
+)
 
-# Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+# # Social widget
+# SOCIAL = (('You can add links in your config file', '#'),
+#           ('Another social link', '#'),)
 
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+# RELATIVE_URLS = True

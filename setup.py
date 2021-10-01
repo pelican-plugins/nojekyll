@@ -1,10 +1,10 @@
-
 import os
 import re
+
 try:
-    from setuptools import setup, find_packages
+    from setuptools import find_packages, setup
 except ImportError:
-    from distutils.core import setup, find_packages
+    from distutils.core import find_packages, setup
 
 base_dir = os.path.dirname(os.path.abspath(__file__))
 
@@ -16,31 +16,37 @@ def get_version(filename="minchin/pelican/plugins/nojekyll.py"):
             if m:
                 return m.group(1)
 
+
 setup(
     name="minchin.pelican.plugins.nojekyll",
     version=get_version(),
-    description="Pelican plugin that adds a ``.nojekyll`` file to the output root. Useful for publishing to Github Pages. Written in Python.",
+    description=(
+        "Pelican plugin that adds a `.nojekyll` file to the output root. "
+        "Useful for publishing to Github Pages. Written in Python."
+    ),
     long_description="\n\n".join([open(os.path.join(base_dir, "README.rst")).read()]),
+    long_description_content_type="text/x-rst",
     author="W. Minchin",
     author_email="w_minchin@hotmail.com",
     url="https://github.com/MinchinWeb/minchin.pelican.plugins.nojekyll",
     packages=find_packages(),
-    namespace_packages=['minchin',
-                        'minchin.pelican',
-                        'minchin.pelican.plugins',
-                       ],
+    namespace_packages=[
+        "minchin",
+        "minchin.pelican",
+        "minchin.pelican.plugins",
+    ],
     include_package_data=True,
     install_requires=[
-        'pelican',
-        ],
+        "pelican",
+    ],
     # dev requirements include minchin.releaser >= 0.4.2
     classifiers=[
-        'Development Status :: 5 - Production/Stable',
-        'Environment :: Console',
-        'Framework :: Pelican :: Plugins',
-        'License :: OSI Approved :: MIT License',
-        'Programming Language :: Python',
-        'Programming Language :: Python :: 3',
-        'Topic :: Software Development :: Libraries :: Python Modules',
-        ],
+        "Development Status :: 5 - Production/Stable",
+        "Environment :: Console",
+        "Framework :: Pelican :: Plugins",
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python",
+        "Programming Language :: Python :: 3",
+        "Topic :: Software Development :: Libraries :: Python Modules",
+    ],
 )
