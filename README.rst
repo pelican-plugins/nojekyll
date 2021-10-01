@@ -2,13 +2,23 @@
 NoJekyll
 ========
 
+|build| |pypi|
+
+.. |build| image:: https://img.shields.io/github/workflow/status/pelican-plugins/nojekyll/build
+    :target: https://github.com/pelican-plugins/nojekyll/actions
+    :alt: Build Status
+
+.. |pypi| image:: https://img.shields.io/pypi/v/minchin.pelican.plugins.nojekyll.svg
+    :target: https://pypi.python.org/pypi/minchin.pelican.plugins.nojekyll
+    :alt: PyPI Version
+
 ``NoJekyll`` is a plugin for `Pelican <http://docs.getpelican.com/>`_,
 a static site generator written in Python.
 
 ``NoJekyll`` creates a *.nojekyll* file in the root of your output directory.
 This is useful when you are publishing your site to
 `GitHub Pages <https://pages.github.com/>`_ as it keeps your site from being
-run through GitHub's defualt Jekyll site generator. This has a side effect
+run through GitHub's default Jekyll site generator. This has a side effect
 of make your updated site go live faster.
 
 
@@ -28,10 +38,10 @@ plugins:
 .. code-block:: python
 
   PLUGINS = [
-              # ...
-              'minchin.pelican.plugins.nojekyll',
-              # ...
-            ]
+      # ...
+      'minchin.pelican.plugins.nojekyll',
+      # ...
+  ]
 
 And that's it! No further configuration is needed.
 
