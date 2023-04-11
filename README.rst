@@ -2,11 +2,7 @@
 NoJekyll
 ========
 
-|build| |pypi|
-
-.. |build| image:: https://img.shields.io/github/workflow/status/pelican-plugins/nojekyll/build
-    :target: https://github.com/pelican-plugins/nojekyll/actions
-    :alt: Build Status
+|pypi|
 
 .. |pypi| image:: https://img.shields.io/pypi/v/minchin.pelican.plugins.nojekyll.svg
     :target: https://pypi.python.org/pypi/minchin.pelican.plugins.nojekyll
