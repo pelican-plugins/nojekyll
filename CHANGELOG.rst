@@ -1,7 +1,9 @@
 NoJekyll Changelog
 
-1.1.1 - 2021-10-01
-------------------
+
+- **feature** Now supports auto-loading through
+  ``minchin.pelican.plugins.autoloader``!
+
 
 - **support** Move plugin to the `Pelican Plugins`_ organization on GitHub. The
   code for the project is now at `pelican-plugins/nojekyll`_

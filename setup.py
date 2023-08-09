@@ -38,6 +38,7 @@ setup(
     include_package_data=True,
     install_requires=[
         "pelican",
+        "minchin.pelican.plugins.autoloader != 1.2.0",
     ],
     # dev requirements include minchin.releaser >= 0.4.2
     classifiers=[

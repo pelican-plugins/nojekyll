@@ -28,18 +28,8 @@ will also install the required dependencies automatically.
 
   pip install minchin.pelican.plugins.nojekyll
 
-Then, in your ``pelicanconf.py`` file, add ``NoJekyll`` to your list of
-plugins:
-
-.. code-block:: python
-
-  PLUGINS = [
-      # ...
-      'minchin.pelican.plugins.nojekyll',
-      # ...
-  ]
-
-And that's it! No further configuration is needed.
+Assuming you are running Pelican v4.5 (or later), the plugin with
+auto-activate. And that's it! No further configuration is needed.
 
 
 Usage
