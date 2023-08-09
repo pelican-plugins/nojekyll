@@ -28,7 +28,7 @@ setup(
     long_description_content_type="text/x-rst",
     author="W. Minchin",
     author_email="w_minchin@hotmail.com",
-    url="https://github.com/MinchinWeb/minchin.pelican.plugins.nojekyll",
+    url="https://github.com/pelican-plugins/nojekyll",
     packages=find_packages(),
     namespace_packages=[
         "minchin",

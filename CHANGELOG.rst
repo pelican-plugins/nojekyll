@@ -1,9 +1,13 @@
 NoJekyll Changelog
 
+1.2.0 -- 2023-08-09
+-------------------
 
 - **feature** Now supports auto-loading through
   ``minchin.pelican.plugins.autoloader``!
 
+1.1.1 -- 2021-10-01
+-------------------
 
 - **support** Move plugin to the `Pelican Plugins`_ organization on GitHub. The
   code for the project is now at `pelican-plugins/nojekyll`_
@@ -12,25 +16,25 @@ NoJekyll Changelog
 .. _Pelican Plugins: https://github.com/pelican-plugins/
 .. _pelican-plugins/nojekyll: https://github.com/pelican-plugins/nojekyll/
 
-1.1.0 - 2021-06-01
-------------------
+1.1.0 -- 2021-06-01
+-------------------
 
 - **feature** add logging
 
-1.0.2 - 2017-04-17
-------------------
+1.0.2 -- 2017-04-17
+-------------------
 
 - **bug** add Pelican trove classifier
 - **bug** update release machinery
 
-1.0.1 - 2016-09-12
-------------------
+1.0.1 -- 2016-09-12
+-------------------
 
 - **bug** fix PEP8 formatting issues
 - **support** add release machinery
 
-1.0.0 - 2016-08-13
-------------------
+1.0.0 -- 2016-08-13
+-------------------
 
 - **feature** original implementation
 - **support** first release to PyPI under `minchin.pelican.plugins.nojekyll`_

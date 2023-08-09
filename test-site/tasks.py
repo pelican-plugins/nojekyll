@@ -7,6 +7,7 @@ import sys
 
 from invoke import task
 from invoke.main import program
+
 from pelican import main as pelican_main
 from pelican.server import ComplexHTTPRequestHandler, RootedHTTPServer
 from pelican.settings import DEFAULT_CONFIG, get_settings_from_file
