@@ -1,5 +1,7 @@
 NoJekyll Changelog
 
+1.2.1 -- 2026-02-21
+-------------------
 
 - **support**: swap from ``setup.py`` to ``pyproject.toml``. See `Issue #8`_.
 

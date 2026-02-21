@@ -11,7 +11,7 @@ import os
 
 from pelican import signals
 
-__version__ = "1.2.1-dev"
+__version__ = "1.2.1"
 
 logger = logging.getLogger(__name__)
 
