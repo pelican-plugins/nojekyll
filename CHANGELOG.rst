@@ -1,10 +1,14 @@
 NoJekyll Changelog
 
+
+- **support**: swap from ``setup.py`` to ``pyproject.toml``. See `Issue #8`_.
+
+
 1.2.0 -- 2023-08-09
 -------------------
 
 - **feature** Now supports auto-loading through
-  ``minchin.pelican.plugins.autoloader``!
+  `minchin.pelican.plugins.autoloader`_!
 
 1.1.1 -- 2021-10-01
 -------------------
@@ -40,3 +44,5 @@ NoJekyll Changelog
 - **support** first release to PyPI under `minchin.pelican.plugins.nojekyll`_
 
 .. _minchin.pelican.plugins.nojekyll: https://pypi.org/project/minchin.pelican.plugins.nojekyll/
+.. _minchin.pelican.plugins.autoloader: https://pypi.org/project/minchin.pelican.plugins.autoloader/
+.. _Issue #8: https://github.com/pelican-plugins/nojekyll/issues/8

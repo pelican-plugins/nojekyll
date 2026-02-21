@@ -2,6 +2,121 @@
 requires = ["setuptools >= 40.6.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
+[tool.setuptools.packages.find]
+include = [
+  "minchin*",
+  "pelican*"
+]
+exclude = [
+  "build",
+  "dist",
+  "docs",
+  "env",
+  "test",
+  "tests",
+  "test-site",
+]
+
+[tool.setuptools.dynamic]
+# this has to be the place the version is located via static analysis
+version = {attr = "minchin.pelican.plugins.nojekyll.__version__"}
+# description = {attr = "minchin.jrnl.__description__"}  # must be pulled from file
+readme = {file = ["README.rst"], content-type = "text/x-rst"}
+# dependencies = {file = [".requirements/base.in"]}
+
+[tool.setuptools.dynamic.optional-dependencies]
+# dev = {file = [".requirements/dev.in"] }
+# release = {file = [".requirements/release.in"] }
+# docs = {file = [".requirements/docs.in"] }
+
+[project]
+name = "minchin.pelican.plugins.nojekyll"
+description = "Pelican plugin that adds a `.nojekyll` file to the output root. Useful for publishing to Github Pages. Written in Python."
+dynamic = [
+    "version",
+    # "description",
+    "readme",
+    # "dependencies",
+    # "optional-dependencies",
+]
+authors = [
+    {name = "William Minchin", email="w_minchin@hotmail.com" },
+]
+maintainers = [
+    {name = "William Minchin", email="w_minchin@hotmail.com" },
+]
+dependencies = [
+    "pelican",
+    "minchin.pelican.plugins.autoloader != 1.2.0",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*", ]
+classifiers = [
+    # 'Development Status :: 1 - Planning',
+    # 'Development Status :: 2 - Pre-Alpha',
+    # 'Development Status :: 3 - Alpha',
+    # "Development Status :: 4 - Beta",
+    "Development Status :: 5 - Production/Stable",
+    # 'Development Status :: 6 - Mature',
+    # 'Development Status :: 7 - Inactive',
+    "Environment :: Console",
+    "Framework :: Pelican :: Plugins",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    # "Programming Language :: Python :: 3.8",
+    # "Programming Language :: Python :: 3.9",
+    # "Programming Language :: Python :: 3.10",
+    # "Programming Language :: Python :: 3.11",
+    # "Programming Language :: Python :: 3.12",
+    # "Programming Language :: Python :: 3.13",
+    # "Programming Language :: Python :: 3.14",
+    # "Programming Language :: Python :: 3 :: Only",
+    "Natural Language :: English",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.optional-dependencies]
+build = [
+    # "pip-tools",
+    "minchin.releaser >= 0.8.2",
+]
+# docs = [
+#     # 'sphinx >= 1.4',  # theme requires at least 1.4
+#     # 'cloud_sptheme >= 1.8',
+#     # 'releases',
+#     # 'Babel >= 1.3, != 2.0',  # 2.0 breaks on Windows
+# ]
+# test = [
+#     # 'green >= 1.9.4',  # v2 works
+#     # 'coverage',
+#     # 'isort',
+#     # 'pydocstyle',
+#     # 'pycodestyle',
+#     # 'check-manifest'
+#     "pytest",
+#     # https://pypi.org/project/pytest-xdist/
+# ]
+# dev = [
+#     "markdown",
+#     "minchin.pelican.plugins.nojekyll",
+# ]
+lint = [
+    "black",
+    "isort",
+]
+
+[project.urls]
+# "Homepage" =
+"Bug Tracker" = "https://github.com/pelican-plugins/nojekyll/issues"
+# Documentation = 
+Repository = "https://github.com/pelican-plugins/nojekyll"
+Changelog = "https://github.com/pelican-plugins/nojekyll/blob/master/CHANGELOG.rst"
+# "Release Notes"
+
+
+
 [tool.isort]
 # Maintain compatibility with Black
 profile = "black"
@@ -11,5 +126,5 @@ force_sort_within_sections = true
 
 # Designate "pelican" as separate import section
 known_pelican = "pelican"
-known_firstparty = "minchin"
+known_first_party = "minchin"
 sections = "FUTURE,STDLIB,THIRDPARTY,PELICAN,FIRSTPARTY,LOCALFOLDER"
